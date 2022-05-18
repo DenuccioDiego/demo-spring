@@ -1,10 +1,11 @@
-package com.example.demo.services;
+package com.example.demo.services.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.example.demo.entities.User;
 import com.example.demo.repositories.UserRepository;
+import com.example.demo.services.UserService;
 
 import org.springframework.stereotype.Service;
 

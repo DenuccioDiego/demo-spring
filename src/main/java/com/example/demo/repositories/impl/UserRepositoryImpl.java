@@ -1,4 +1,4 @@
-package com.example.demo.repositories;
+package com.example.demo.repositories.impl;
 
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.example.demo.database.JdbcConnectionFactory;
 import com.example.demo.entities.User;
+import com.example.demo.repositories.UserRepository;
 
 //import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

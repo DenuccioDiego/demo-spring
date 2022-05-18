@@ -15,4 +15,10 @@ public class User {
         this.sesso = sesso;
     }
 
+    @Override
+    public String toString() {
+        return "User [codicefiscale=" + codicefiscale + ", cognome=" + cognome + ", eta=" + eta + ", nome=" + nome
+                + ", sesso=" + sesso + "]";
+    }
+
 }

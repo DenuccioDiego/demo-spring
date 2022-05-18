@@ -33,11 +33,12 @@ public class UserRepositoryImpl implements UserRepository {
         ResultSet rs = stmt.executeQuery("SELECT * FROM public.user ORDER BY codicefiscale ASC");
 
         while (rs.next()) {
-            userList.add(new User(rs.getString("nome"), rs.getString("cognome"), rs.getInt("eta"),
-                    rs.getString("codicefiscale"), rs.getString("sesso")));
-            System.out.println(userList);
-        }
+            User user = new User(rs.getString("nome"), rs.getString("cognome"), rs.getInt("eta"),
+                    rs.getString("codicefiscale"), rs.getString("sesso"));
+            userList.add(user);
 
+        }
+        System.out.println(userList.toString());
         return userList;
     }
 }

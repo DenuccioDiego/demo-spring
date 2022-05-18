@@ -6,6 +6,6 @@ import com.example.demo.entities.User;
 
 public interface UserService {
 
-    List<User> findUser() throws Exception;
+    List<User> findUsers() throws Exception;
 
 }

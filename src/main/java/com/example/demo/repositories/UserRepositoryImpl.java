@@ -29,7 +29,7 @@ public class UserRepositoryImpl implements UserRepository {
         List<User> userList = new ArrayList<User>();
 
         Statement stmt = jdbcConnectionFactory.openConnection().createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM public.'user' ORDER BY codicefiscale ASC");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM public.user ORDER BY codicefiscale ASC");
 
         while (rs.next()) {
             System.out.println(rs.getString("nome"));

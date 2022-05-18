@@ -8,7 +8,7 @@ import java.util.List;
 import com.example.demo.database.JdbcConnectionFactory;
 import com.example.demo.entities.User;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
